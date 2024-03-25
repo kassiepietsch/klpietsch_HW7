@@ -11,6 +11,8 @@
           left: 10px;
       }
   </style>
+  <script src="https://kit.fontawesome.com/95e3d7d7cf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="stylesheet.css">
   </head>
 
   <body>
@@ -31,7 +33,11 @@
         <label for="raceOther">Other</label><br>
     </form>
     
-    <h3>Gender/Sex</h3>
+    <h3>Gender/Sex <span class="tooltip">
+      <i class="fa-solid fa-circle-info fontawesome"></i>
+      <span class="tooltip tooltiptext">Identifying your gender helps us enhance diversity and inclusivity in tech by addressing historical gender imbalnces.</span>
+  </span>
+  </h3>
     <form id="genderForm">
         <input type="radio" name="gender" value="Male" id="genderMale">
         <label for="genderMale">Male</label><br>

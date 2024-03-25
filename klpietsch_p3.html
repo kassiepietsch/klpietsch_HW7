@@ -3,31 +3,51 @@
 
   <head>
     <meta charset="utf-8">
-    <title> page title </title>
+    <title> Business Analytics Student Survey </title>
+    <style>
+      .page-number {
+          position: fixed;
+          bottom: 10px;
+          left: 10px;
+      }
+  </style>
   </head>
 
   <body>
-
-    <p>Check the boxes for the courses you have completed:</p>
-    <form id="courseForm">
-        <input type="checkbox" name="course" value="Information Systems" id="course1">
-        <label for="course1">Information Systems</label><br>
-        <input type="checkbox" name="course" value="Operations" id="course2">
-        <label for="course2">Operations</label><br>
-        <input type="checkbox" name="course" value="Foundations of Business Analytics" id="course3">
-        <label for="course3">Foundations of Business Analytics</label><br>
-        <input type="checkbox" name="course" value="Computational Thinking" id="course4">
-        <label for="course4">Computational Thinking</label><br>
-        <input type="checkbox" name="course" value="Database Management" id="course5">
-        <label for="course5">Database Management</label><br>
-        <input type="checkbox" name="course" value="Data Wrangling" id="course6">
-        <label for="course6">Data Wrangling</label><br>
-        <input type="checkbox" name="course" value="Data Mining" id="course7">
-        <label for="course7">Data Mining</label><br>
-        <input type="checkbox" name="course" value="BAIS Capstone" id="course8">
-        <label for="course8">BAIS Capstone</label><br>
+    <h1>Business Analytics Student Survey</h1>
+    <h3>Race/Ethnicity</h3>
+    <form id="raceForm">
+        <input type="radio" name="race" value="White" id="raceWhite">
+        <label for="raceWhite">White</label><br>
+        <input type="radio" name="race" value="Black or African American" id="raceBlack">
+        <label for="raceBlack">Black or African American</label><br>
+        <input type="radio" name="race" value="Asian" id="raceAsian">
+        <label for="raceAsian">Asian</label><br>
+        <input type="radio" name="race" value="Hispanic or Latino" id="raceHispanic">
+        <label for="raceHispanic">Hispanic or Latino</label><br>
+        <input type="radio" name="race" value="Native American or American Indian" id="raceNative">
+        <label for="raceNative">Native American or American Indian</label><br>
+        <input type="radio" name="race" value="Other" id="raceOther">
+        <label for="raceOther">Other</label><br>
     </form>
+    
+    <h3>Gender/Sex</h3>
+    <form id="genderForm">
+        <input type="radio" name="gender" value="Male" id="genderMale">
+        <label for="genderMale">Male</label><br>
+        <input type="radio" name="gender" value="Female" id="genderFemale">
+        <label for="genderFemale">Female</label><br>
+        <input type="radio" name="gender" value="Non-binary or third gender" id="genderNonBinary">
+        <label for="genderNonBinary" title="Identifying your gender helps us enhance diversity and inclusivity in tech by addressing historical gender imbalances">Non-binary or third gender</label><br>
+        <input type="radio" name="gender" value="Prefer not to say" id="genderPreferNotSay">
+        <label for="genderPreferNotSay">Prefer not to say</label><br>
+    </form>
+  
+    <button onclick="window.location.href='klpietsch_ty.html';">
+      Finish
+    </button>
 
+    <p class="page-number">Page 3 of 3</p>
   </body>
 
 </html>
